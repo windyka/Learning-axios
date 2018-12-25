@@ -15,7 +15,7 @@ class App extends Component {
 
   getDataFromAPI = () => {
     Axios
-      .get('http://167.160.188.135/api/book')
+      .get('https://api-demo.koding.sch.id/api/book')
       .then((res) => {
         console.log(res.data.data)
         this.setState({

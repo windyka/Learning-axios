@@ -10,7 +10,7 @@ class Homes extends Component {
                 <Row>
                     <Col md={8}>
                         {this.props.posts.map((value, index) => {
-                            return <Cards update={value.author.updated_at} judul={value.judul} id={value.author.id} author={value.author.name} />
+                            return <Cards update={value.updated_at} create={value.created_at} id={value.id_author} judul={value.judul} />
                         })}
                     </Col>
                     <Col md={4}>
